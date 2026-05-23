@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Bienvenido</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='op.css') }}"/>
+</head>
+<body>
+
+  <div class="caja bienvenida">
+    <div class="icono">🎓</div>
+    <h2>¡Bienvenido!</h2>
+    <p class="nombre">{{ nombre }}</p>
+    <p class="subtitulo">Has ingresado correctamente al Campus Virtual.</p>
+    <a href="/" class="btn-salir">Cerrar sesión</a>
+  </div>
+
+</body>
+</html>

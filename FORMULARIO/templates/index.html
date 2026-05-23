@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Campus Virtual — Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='op.css') }}"/>
+</head>
+<body>
+
+  <div class="caja">
+    <h2>Campus Virtual</h2>
+    <p class="subtitulo">Ingresa tus credenciales</p>
+
+    <form action="/captura" method="POST">
+
+      <div class="campo">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Tu usuario" required/>
+      </div>
+
+      <div class="campo">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" id="contrasena" name="contrasena" placeholder="Tu contraseña" required/>
+      </div>
+
+      <button type="submit">Ingresar</button>
+
+    </form>
+  </div>
+
+</body>
+</html>

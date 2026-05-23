@@ -1,0 +1,119 @@
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Variables ── */
+:root {
+  --navy:   #0d1b2a;
+  --navy2:  #162032;
+  --teal:   #00c9a7;
+  --gold:   #f4b942;
+  --white:  #f7f9fc;
+  --muted:  #8a9bb0;
+  --border: rgba(255,255,255,0.08);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--navy);
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Caja principal ── */
+.caja {
+  background: var(--navy2);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--teal);
+  border-radius: 12px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+  color: var(--white);
+}
+
+.subtitulo {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+/* ── Campos ── */
+.campo {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.campo input {
+  width: 100%;
+  padding: 11px 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.campo input::placeholder { color: var(--muted); }
+.campo input:focus { border-color: var(--teal); }
+
+/* ── Botón ── */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: var(--teal);
+  color: var(--navy);
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+button:hover { opacity: 0.85; }
+
+/* ── Pantalla bienvenida ── */
+.bienvenida .icono {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+.bienvenida .nombre {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--teal);
+  margin: 10px 0 6px;
+}
+
+.btn-salir {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 10px 28px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.btn-salir:hover { border-color: var(--teal); color: var(--teal); }
